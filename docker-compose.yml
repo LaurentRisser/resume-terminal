@@ -5,7 +5,7 @@ services:
         context: .
         dockerfile: Dockerfile
     # Not on DockerHub
-    image: antoine1003/resume-terminal
+    image: laurent-risser/resume-terminal
     container_name: resume-terminal
     ports:
-      - '80:80'
+      - '8080'

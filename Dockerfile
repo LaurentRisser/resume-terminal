@@ -12,5 +12,6 @@ RUN apk update \
     && rm -rf /var/cache/apk/*
 
 COPY --from=builder /data/dist /var/www/localhost/htdocs
+EXPOSE 8080
 
 CMD ["lighttpd","-D","-f","/etc/lighttpd/lighttpd.conf"]
