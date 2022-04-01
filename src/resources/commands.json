@@ -3,7 +3,7 @@
       "command":"help",
       "responseType":"list",
       "value":[
-        "<code>a-propos</code> : Affiche les informations me concernant",
+        "<code>about</code> : Affiche les informations me concernant",
         "<code>clear</code> : Nettoie le terminal",
         "<code>experiences</code> : Affiche la liste de mes expériences",
         "<code>get cv</code> : Télécharge le CV",
@@ -16,7 +16,7 @@
       ]
     },
     {
-      "command":"a-propos",
+      "command":"about",
       "responseType":"code",
       "value":[
         "{",
