@@ -1,17 +1,14 @@
-FROM debian:bullseye-slim as builder
-WORKDIR /data
-COPY . .
-RUN apt update && apt install -y npm
-RUN npm install -i package.json \
-	&& npm run build
+# from base image node
+FROM node:8.11-slim
 
-FROM alpine
+RUN mkdir -p /usr/src/app
+WORKDIR /usr/src/app
 
-RUN apk update \
-    && apk add lighttpd \
-    && rm -rf /var/cache/apk/*
+# copy oter files as well
+COPY dist/api.bundle.js .
 
-COPY --from=builder /data/dist /var/www/localhost/htdocs
-EXPOSE 80:80
+#expose the port
+EXPOSE 3070
 
-CMD ["lighttpd","-D","-f","/etc/lighttpd/lighttpd.conf"]
+# command to run when intantiate an image
+CMD ["node","api.bundle.js"]
