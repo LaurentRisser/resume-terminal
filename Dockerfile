@@ -1,14 +1,13 @@
-# from base image node
-FROM node:8.11-slim
+FROM node
 
-RUN mkdir -p /usr/src/app
 WORKDIR /usr/src/app
 
-# copy oter files as well
-COPY dist/api.bundle.js .
+ENV PORT 8080
 
-#expose the port
-EXPOSE 3070
+COPY package*.json .
 
-# command to run when intantiate an image
-CMD ["node","api.bundle.js"]
+RUN npm install
+
+COPY . .
+
+CMD [ "npm", "run", "dev" ]
