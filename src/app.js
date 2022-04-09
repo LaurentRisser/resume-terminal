@@ -27,7 +27,7 @@ commandsList = commandsList.concat(customCommands);
 // Commandes 'easter eggs' non disponibles à l'autocomplétion
 const hiddenCommands = ["pif", "rm -rf /"];
 
-// Ajout de la possibilité de déplacer la fenêtre pour les PC test test
+// Ajout de la possibilité de déplacer la fenêtre pour les PC test test test
 if (window.innerWidth > 1024) {
   dragElement(document.querySelector(".terminal"));
 }
