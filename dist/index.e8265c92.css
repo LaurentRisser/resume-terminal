@@ -128,7 +128,7 @@ ul {
 }
 
 .terminal .terminal__body .terminal__line:before {
-  content: "Antoine DAUTRY ~$ ";
+  content: "Laurent Risser ~$ ";
   color: var(--username-color);
 }
 
