@@ -3,27 +3,27 @@
       "command":"help",
       "responseType":"list",
       "value":[
-        "<code>about</code> : Display some information about myself",
-        "<code>clear</code> : Clean the terminal",
-        "<code>experiences</code> : Display all my experiences",
-        "<code>get cv</code> : Download my CV",
-        "<code>help</code> : Display this help",
-        "<code>hobby</code> : Display all my hobbies",
-        "<code>projets-perso</code> : Display all my personal projects",
-        "<code>dark/light</code> : Change the theme",
-        "<em>You can use the TAB button to complete a command</em>",
-        "<em>You can retrieve the previous command using the arrow</em>"
+        "<code>a-propos</code> : Affiche les informations me concernant",
+        "<code>clear</code> : Nettoie le terminal",
+        "<code>experiences</code> : Affiche la liste de mes expériences",
+        "<code>get cv</code> : Télécharge le CV",
+        "<code>help</code> : Affiche l'aide",
+        "<code>hobby</code> : Affiche la liste de mes passes temps",
+        "<code>projets-perso</code> : Affiche la liste de mes projets personnels",
+        "<code>dark/light</code> : Change le thème de la page",
+        "<em>Vous pouvez utiliser la touche TAB afin de compléter une commande</em>",
+        "<em>Vous pouvez retrouver les anciennes commandes avec les flèches haut et bas.</em>"
       ]
     },
     {
-      "command":"about",
+      "command":"a-propos",
       "responseType":"code",
       "value":[
         "{",
-        "   \"nom\" : \"Laurent Risser\",",
-        "   \"poste\" : \"Data Engineer\",",
-        "   \"experience\" : \"2 years\",",
-        "   \"ville\" : \"Montreal, Canada\"",
+        "   \"nom\" : \"Antoine DAUTRY\",",
+        "   \"poste\" : \"Développeur Fullstack\",",
+        "   \"experience\" : \"2 ans\",",
+        "   \"ville\" : \"Nantes, France\"",
         "}"
       ]
     },
@@ -32,34 +32,34 @@
       "responseType":"table",
       "headers":[
         "Date",
-        "Position",
-        "Company",
-        "Description"
+        "Client",
+        "Description",
+        "Tech"
       ],
       "rows":[
         [
-          "02/2021<br/>Today",
-          "Data Engineer",
-          "GEANIZ<br/><em>Montréal, Canada</em>",
-          "Build a data ingestion pipeline using Python and Google Cloud<br/>Built several automatic tools to extract and transform various files"
+          "11/2021<br/>Ajd",
+          "Elephant Tech<br/><em>Ministère de la justice</em>",
+          "Mise en place d'une plateforme mettant en relation les<br/>différents acteurs de la réinsertion des anciens détenus.",
+          "Angular 11<br/>Spring Boot<br/>Axelor"
         ],
         [
-          "08/2019<br/>01/2021",
-          "Bilingual Client Support",
-          "Apexa Corp<br/><em>Toronto, Canada</em>",
-          "Tracked, manage and resolve technical client’s issues using JIRA<br/>Helped the development by testing an upcoming new sprint release using a testing environment."
+          "03/2021<br/>11/2021",
+          "SII<br/><em>La Poste</em>",
+          "Outil interne La Poste permettant de répartir les techniciens<br/>sur différentes missions.",
+          "Angular 11<br/>Spring Boot<br/>Spring Batch"
         ],
         [
-          "01/2018<br/>07/2019",
-          "Bilingual Health Coordinator",
-          "Shoppers Drug Mart Specialty Health Network <br/><em>Toronto, Montreal</em>",
-          "Contact, and schedule high cost drug deliveries with patients accross Canada<br/>Effectively coordinating processes and procedures. Working cooperatively with other departments within the company (reimbursement, clinical coordination)."
+          "02/2020<br/>03/2021",
+          "SII<br/><em>I.T. Dept</em>",
+          "Maintenance d'un outil interne de feuille de temps.<br/>Développement de plugins pour notre version de ProjeQtor.<br/>Conversion d'une ancienne webapp vers Angular 9.",
+          "Symfony<br/>Angular 9"
         ],
         [
-          "09/2017<br/>12/2017",
-          "Bilingual Customer Service Representative",
-          "Millenium One Solution<br/><em>Toronto, Canada</em>",
-          "Responded and communicated to customer inquiries in a pleasant, courteous, professional, and well-informed manner."
+          "11/2019<br/>02/2020",
+          "SII<br/><em>Poste IMMO</em>",
+          "Travail sur un outil de gestion de processus pour gérer l'évolution d'une demande de travaux.",
+          "Symfony 3.4<br/>AngularJS<br/>Processmaker"
         ]
       ]
     },
@@ -67,9 +67,9 @@
       "command":"hobby",
       "responseType":"list",
       "value":[
-        "Sport: Road Cycling, Running",
-        "IT: Python, GCP, AWS",
-        "Others: Movies, Politics, Photography"
+        "Musique: Piano, Guitare",
+        "Programmation: JS, Angular, PHP",
+        "Autre: Cinéma, Aéronautique, Photographie"
       ]
     },
     {

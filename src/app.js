@@ -27,7 +27,7 @@ commandsList = commandsList.concat(customCommands);
 // Commandes 'easter eggs' non disponibles à l'autocomplétion
 const hiddenCommands = ["pif", "rm -rf /"];
 
-// Ajout de la possibilité de déplacer la fenêtre pour les PC test test test
+// Ajout de la possibilité de déplacer la fenêtre pour les PC
 if (window.innerWidth > 1024) {
   dragElement(document.querySelector(".terminal"));
 }
@@ -203,20 +203,20 @@ function handleCustomCommands(command) {
   switch (command) {
     case "pif":
       pif();
-      return "Party time";
+      return "C'est la fête !";
     case "light":
       if (!document.body.classList.contains("dark-mode"))
-        return "It's already bright mode";
+        return "Vous êtes déjà en mode clair";
       setDarkMode(false);
-      return "It's now bright mode";
+      return "Vous êtes maintenant en mode clair.";
     case "dark":
       if (document.body.classList.contains("dark-mode"))
-        return "It's already dark mode";
+        return "Vous êtes déjà en mode sombre";
       setDarkMode(true);
-      return "It's now dark mode";
+      return "Vous êtes maintenant en mode sombre.";
     case "get cv":
       getCV();
-      return "Downloading CV ... wait for it ... wait for it ...";
+      return "Le CV va être téléchargé.";
     case "rm -rf /":
       rmRf();
       return "w4dhIHZhIFDDiVRFUiAh";
