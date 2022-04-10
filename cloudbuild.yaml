@@ -1,0 +1,23 @@
+steps:
+  - name: "gcr.io/cloud-builders/docker"
+    args: ["build", "-t", "gcr.io/node-resume", "."]
+  - name: "gcr.io/cloud-builders/docker"
+    args: ["push", "gcr.io/node-resume"]
+  - name: "gcr.io/node-resume"
+    args:
+      - make
+      - cloud-check
+  - name: "gcr.io/cloud-builders/gcloud"
+    args:
+      - run
+      - deploy
+      - node-resume
+      - --image=gcr.io/node-resume:latest
+      - --memory=256Mi
+      - --cpu=1
+      - --concurrency=100
+      - --platform=managed
+      - --region=northamerica-northeast1
+      - --allow-unauthenticated
+      - --port=8080
+timeout: 900s
