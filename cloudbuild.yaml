@@ -1,12 +1,6 @@
 steps:
   - name: "gcr.io/cloud-builders/docker"
     args: ["build", "-t", "ggcr.io/laurent-pipeline/node_resume", "."]
-  - name: "gcr.io/cloud-builders/docker"
-    args: ["push", "gcr.io/laurent-pipeline/node_resume"]
-  - name: "gcr.io/laurent-pipeline/node_resume"
-    args:
-      - make
-      - cloud-check
   - name: "gcr.io/cloud-builders/gcloud"
     args:
       - run
