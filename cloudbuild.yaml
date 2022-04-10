@@ -1,9 +1,9 @@
 steps:
   - name: "gcr.io/cloud-builders/docker"
-    args: ["build", "-t", "gcr.io/node-resume", "."]
+    args: ["build", "-t", "ggcr.io/laurent-pipeline/node_resume", "."]
   - name: "gcr.io/cloud-builders/docker"
-    args: ["push", "gcr.io/node-resume"]
-  - name: "gcr.io/node-resume"
+    args: ["push", "gcr.io/laurent-pipeline/node_resume"]
+  - name: "gcr.io/laurent-pipeline/node_resume"
     args:
       - make
       - cloud-check
@@ -12,7 +12,7 @@ steps:
       - run
       - deploy
       - node-resume
-      - --image=gcr.io/node-resume:latest
+      - --image=gcr.io/laurent-pipeline/node_resume:latest
       - --memory=256Mi
       - --cpu=1
       - --concurrency=100
