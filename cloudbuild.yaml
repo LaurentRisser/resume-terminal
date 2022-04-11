@@ -9,7 +9,7 @@ steps:
       - deploy
       - node-resume
       - --image=gcr.io/laurent-pipeline/node_resume:latest
-      - --memory=256Mi
+      - --memory=512Mi
       - --cpu=1
       - --concurrency=100
       - --platform=managed
