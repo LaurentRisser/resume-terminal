@@ -1,14 +1,9 @@
 steps:
-# Install dependencies
-- name: node
-  entrypoint: npm
-  args: ['install']
-# Run tests
-- name: node
-  entrypoint: npm
-  args: ['test']
-- name: node
-  entrypoint: npm
+  - name: "gcr.io/cloud-builders/docker"
+    args: ["build", "-t", "gcr.io/laurent-pipeline/node_resume", "."]
+  - name: "gcr.io/cloud-builders/docker"
+    args: ["push", "gcr.io/laurent-pipeline/node_resume"]   
+  - name: "gcr.io/cloud-builders/gcloud"
     args:
       - run
       - deploy
