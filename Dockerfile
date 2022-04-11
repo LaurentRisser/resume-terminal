@@ -13,4 +13,6 @@ RUN apk update \
 
 COPY --from=builder /data/dist /var/www/localhost/htdocs
 
+ENV PORT 8080
+
 CMD ["lighttpd","-D","-f","/etc/lighttpd/lighttpd.conf"]
