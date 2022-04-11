@@ -4,7 +4,7 @@ steps:
   - name: "gcr.io/cloud-builders/docker"
     args: ["push", "gcr.io/laurent-pipeline/node_resume"]
   - name: "gcr.io/cloud-builders/docker:latest"
-  args:
+    args:
     - cloud-check    
   - name: "gcr.io/cloud-builders/gcloud"
     args:
