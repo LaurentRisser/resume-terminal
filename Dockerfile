@@ -1,6 +1,6 @@
 FROM node
 
-WORKDIR /usr/src/app
+WORKDIR /usr/src/app.js
 
 ENV PORT 8080
 
