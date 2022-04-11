@@ -1,6 +1,6 @@
 FROM node
 
-WORKDIR /src/app
+WORKDIR /usr/src/app
 
 ENV PORT 8080
 
@@ -10,4 +10,4 @@ RUN npm install
 
 COPY . ./
 
-CMD [ "npm", "run", "dev" , "build"]
+CMD [ "npm", "run", "dev"]
