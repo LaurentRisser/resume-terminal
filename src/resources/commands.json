@@ -3,20 +3,20 @@
       "command":"help",
       "responseType":"list",
       "value":[
-        "<code>About me</code> : Display information about me",
+        "<code>about me</code> : Display information about me",
         "<code>clear</code> : Clear the terminal",
         "<code>experiences</code> : Display my experiences",
         "<code>get cv</code> : Download my CV",
         "<code>help</code> : Display all the commands available",
-        "<code>hobby</code> : Display my hobbies",
-        "<code>projets-perso</code> : Display my personal projects",
+        "<code>hobbies</code> : Display my hobbies",
+        "<code>personal-projects</code> : Display my personal projects",
         "<code>dark/light</code> : Change the theme",
         "<em>You can use the button TAB to auto complete</em>",
         "<em>You can retrieve the previous commands by pressing arrow uo</em>"
       ]
     },
     {
-      "command":"About me",
+      "command":"about me",
       "responseType":"code",
       "value":[
         "{",
@@ -32,73 +32,69 @@
       "responseType":"table",
       "headers":[
         "Date",
-        "Client",
-        "Description",
-        "Tech"
+        "Position",
+        "Company",
+        "Description"
       ],
       "rows":[
         [
-          "11/2021<br/>Ajd",
-          "Elephant Tech<br/><em>Ministère de la justice</em>",
-          "Mise en place d'une plateforme mettant en relation les<br/>différents acteurs de la réinsertion des anciens détenus.",
-          "Angular 11<br/>Spring Boot<br/>Axelor"
+          "02/2021<br/>Today",
+          "Data Engineer",
+          "Genaiz<br/><em>Montréal, Canada</em>",
+          "Mise en place d'une plateforme mettant en relation les<br/>différents acteurs de la réinsertion des anciens détenus."
         ],
         [
-          "03/2021<br/>11/2021",
-          "SII<br/><em>La Poste</em>",
-          "Outil interne La Poste permettant de répartir les techniciens<br/>sur différentes missions.",
-          "Angular 11<br/>Spring Boot<br/>Spring Batch"
+          "08/2019<br/>01/2021",
+          "Bilingual Customer Services Support",
+          "Apexa Corp <br/><em>Toronto, Canada</em>",
+          "Resolve and support clients’ (Advisors, MGAs, Carriers) issues and questions on the software, support the call center to resolve the inquiries."
         ],
         [
           "02/2020<br/>03/2021",
-          "SII<br/><em>I.T. Dept</em>",
-          "Maintenance d'un outil interne de feuille de temps.<br/>Développement de plugins pour notre version de ProjeQtor.<br/>Conversion d'une ancienne webapp vers Angular 9.",
-          "Symfony<br/>Angular 9"
+          "Bilingual Client Sucess Specialist",
+          "Shoppers Drug Mart Specialty Health Network<br/><em>Toronto, Canada</em>",
+          "Effectively coordinating processes and procedures. Working cooperatively with other departments within the company (reimbursement, clinical coordination)."
         ],
         [
-          "11/2019<br/>02/2020",
-          "SII<br/><em>Poste IMMO</em>",
-          "Travail sur un outil de gestion de processus pour gérer l'évolution d'une demande de travaux.",
-          "Symfony 3.4<br/>AngularJS<br/>Processmaker"
+          "09/2016<br/>11/2018",
+          "Private Tutor",
+          "Voilà Learning<br/><em>Toronto, Canada</em>",
+          "Helped students from various grades to achieve great results. Set individual goals and made plans to achieve short-term and long-term goals."
         ]
       ]
     },
     {
-      "command":"hobby",
+      "command":"hobbies",
       "responseType":"list",
       "value":[
-        "Musique: Piano, Guitare",
-        "Programmation: JS, Angular, PHP",
-        "Autre: Cinéma, Aéronautique, Photographie"
+        "Sports: Cycling, Running, Hiking",
+        "Programming: Python",
+        "Finance: Investing, Stock Market"
       ]
     },
     {
-      "command":"projets-perso",
+      "command":"personal-project",
       "responseType":"table",
       "headers":[
-        "Nom",
+        "Title",
         "Description",
-        "Tech",
         "Liens"
       ],
       "rows":[
         [
-          "Chartsfinder - Web<br/>(2021)",
-          "Application web pour trouver rapidement des cartes aéronautiques. Une version C# existait déjà mais j'ai préféré la mettre à jour avec une version web qui est plus simple d'utilisation.",
-          "Angular 11, PHP 7.4",
-          "<a href=\"https://chartsfinder.adautry.fr\" target=\"blank\">Lien</a>"
+          "How to monitor a political movement on Twitter using AWS<br/>(2021)",
+          "Project focused on how to build an ETL using AWS services from Twitter API to a near-live Dashboard.",
+          "<a href=\"https://towardsdatascience.com/create-a-near-live-dashboard-using-twitter-and-aws-18879952e309\" target=\"blank\">Lien</a>"
         ],
         [
-          "Personal website<br/>(2021)",
-          "Site web personnel me permettant de montrer mes projets et de déployer une nouvelle version du logiciel.<br/>Il y a même un jeu caché...",
-          "Symfony 5",
-          "<a href=\"https://adautry.fr\" target=\"blank\">Lien</a>"
+          "Using NLP to understand a WhatsApp Group<br/>(2021)",
+          "Transformed an unstructured dataframe to a structured dataframe using the tokenization method on Python with Regex package <br/>Explored the way people are texting each other and the most common emojis used throughout the day",
+          "<a href=\"https://towardsdatascience.com/get-to-know-your-friends-with-natural-language-processing-nlp-38a1f6e56e09\" target=\"blank\">Lien</a>"
         ],
         [
-          "Chartsfinder - Software<br/>(2020)",
-          "Logiciel permettant de récupérer rapidement les cartes aéronautiques.",
-          "C# WPF",
-          "<a href=\"https://adautry.fr/software/chartsfinder\" target=\"blank\">Lien</a>"
+          "Predicting flight delays in the U.S.<br/>(2020)",
+          "Used SQL functions in Python to merge and manipulate dataframes <br/>Visualized the data using Python Matplolib, Seaborn and Basemap packages",
+          "<a href=\"https://medium.com/analytics-vidhya/will-your-flight-be-late-36818ffe52b3\" target=\"blank\">Lien</a>"
         ]
       ]
     }
