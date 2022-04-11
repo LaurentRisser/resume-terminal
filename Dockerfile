@@ -1,13 +1,16 @@
-FROM node
+FROM debian:bullseye-slim as builder
+WORKDIR /data
+COPY . .
+RUN apt update && apt install -y npm
+RUN npm install -i package.json \
+	&& npm run build
 
-WORKDIR /usr/src/app
+FROM alpine
 
-ENV PORT 8080
+RUN apk update \
+    && apk add lighttpd \
+    && rm -rf /var/cache/apk/*
 
-COPY package*.json ./
+COPY --from=builder /data/dist /var/www/localhost/htdocs
 
-RUN npm run build
-
-COPY . ./
-
-CMD [ "npm", "run", "build" ]
+CMD ["lighttpd","-D","-f","/etc/lighttpd/lighttpd.conf"]
