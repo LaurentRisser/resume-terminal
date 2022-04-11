@@ -16,14 +16,14 @@
       ]
     },
     {
-      "command":"a-propos",
+      "command":"About me",
       "responseType":"code",
       "value":[
         "{",
-        "   \"nom\" : \"Antoine DAUTRY\",",
-        "   \"poste\" : \"Développeur Fullstack\",",
-        "   \"experience\" : \"2 ans\",",
-        "   \"ville\" : \"Nantes, France\"",
+        "   \"nom\" : \"Laurent Risser\",",
+        "   \"poste\" : \"Data Engineer\",",
+        "   \"experience\" : \"2 years\",",
+        "   \"ville\" : \"Montréal, Canada\"",
         "}"
       ]
     },
