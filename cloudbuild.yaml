@@ -3,13 +3,16 @@ steps:
     args: ["build", "-t", "gcr.io/laurent-pipeline/node_resume", "."]
   - name: "gcr.io/cloud-builders/docker"
     args: ["push", "gcr.io/laurent-pipeline/node_resume"]
+  - name: "gcr.io/cloud-builders/docker:latest"
+  args:
+    - cloud-check    
   - name: "gcr.io/cloud-builders/gcloud"
     args:
       - run
       - deploy
       - node-resume
       - --image=gcr.io/laurent-pipeline/node_resume:latest
-      - --memory=512Mi
+      - --memory=1Gi
       - --cpu=1
       - --concurrency=100
       - --platform=managed
