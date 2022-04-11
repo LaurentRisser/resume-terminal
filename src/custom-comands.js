@@ -52,8 +52,8 @@ export function setDarkMode(value) {
 
 export function getCV() {
   const a = document.createElement("a");
-  a.href = "resources/CV - Antoine DAUTRY.pdf";
-  a.setAttribute("download", "CV - Antoine DAUTRY.pdf");
+  a.href = "resources/CV - data_engineer_resume_laurent_risser.pdf";
+  a.setAttribute("download", "data_engineer_resume_laurent_risser.pdf");
   a.click();
 }
 

@@ -3,16 +3,16 @@
       "command":"help",
       "responseType":"list",
       "value":[
-        "<code>a-propos</code> : Affiche les informations me concernant",
-        "<code>clear</code> : Nettoie le terminal",
-        "<code>experiences</code> : Affiche la liste de mes expériences",
-        "<code>get cv</code> : Télécharge le CV",
-        "<code>help</code> : Affiche l'aide",
-        "<code>hobby</code> : Affiche la liste de mes passes temps",
-        "<code>projets-perso</code> : Affiche la liste de mes projets personnels",
-        "<code>dark/light</code> : Change le thème de la page",
-        "<em>Vous pouvez utiliser la touche TAB afin de compléter une commande</em>",
-        "<em>Vous pouvez retrouver les anciennes commandes avec les flèches haut et bas.</em>"
+        "<code>About me</code> : Display information about me",
+        "<code>clear</code> : Clear the terminal",
+        "<code>experiences</code> : Display my experiences",
+        "<code>get cv</code> : Download my CV",
+        "<code>help</code> : Display all the commands available",
+        "<code>hobby</code> : Display my hobbies",
+        "<code>projets-perso</code> : Display my personal projects",
+        "<code>dark/light</code> : Change the theme",
+        "<em>You can use the button TAB to auto complete</em>",
+        "<em>You can retrieve the previous commands by pressing arrow uo</em>"
       ]
     },
     {
