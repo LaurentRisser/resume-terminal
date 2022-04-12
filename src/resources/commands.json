@@ -9,7 +9,8 @@
         "<code>get_cv</code> : Download my CV",
         "<code>help</code> : Display all the commands available",
         "<code>hobbies</code> : Display my hobbies",
-        "<code>personal-projects</code> : Display my personal projects",
+        "<code>personal_projects</code> : Display my personal projects",
+        "<code>contact_me</code> : Display my email address",
         "<code>dark/light</code> : Change the theme",
         "<em>You can use the button TAB to auto complete</em>",
         "<em>You can retrieve the previous commands by pressing arrow uo</em>"
@@ -20,10 +21,10 @@
       "responseType":"code",
       "value":[
         "{",
-        "   \"nom\" : \"Laurent Risser\",",
-        "   \"poste\" : \"Data Engineer\",",
-        "   \"experience\" : \"2 years\",",
-        "   \"ville\" : \"Montréal, Canada\"",
+        "   \"Name\" : \"Laurent Risser\",",
+        "   \"Position\" : \"Data Engineer\",",
+        "   \"Experience\" : \"2 years\",",
+        "   \"Location\" : \"Montréal, Canada\"",
         "}"
       ]
     },
@@ -64,6 +65,13 @@
       ]
     },
     {
+      "command":"contact_me",
+      "responseType":"list",
+      "value":[
+        "laurentrisser67@gmail.com"
+      ]
+    },
+    {
       "command":"hobbies",
       "responseType":"list",
       "value":[
@@ -73,28 +81,28 @@
       ]
     },
     {
-      "command":"personal-project",
+      "command":"personal_project",
       "responseType":"table",
       "headers":[
         "Title",
         "Description",
-        "Liens"
+        "Links"
       ],
       "rows":[
         [
           "How to monitor a political movement on Twitter using AWS<br/>(2021)",
           "Project focused on how to build an ETL using AWS services from Twitter API to a near-live Dashboard.",
-          "<a href=\"https://towardsdatascience.com/create-a-near-live-dashboard-using-twitter-and-aws-18879952e309\" target=\"blank\">Lien</a>"
+          "<a href=\"https://towardsdatascience.com/create-a-near-live-dashboard-using-twitter-and-aws-18879952e309\" target=\"blank\">Link</a>"
         ],
         [
           "Using NLP to understand a WhatsApp Group<br/>(2021)",
           "Transformed an unstructured dataframe to a structured dataframe using the tokenization method on Python with Regex package <br/>Explored the way people are texting each other and the most common emojis used throughout the day",
-          "<a href=\"https://towardsdatascience.com/get-to-know-your-friends-with-natural-language-processing-nlp-38a1f6e56e09\" target=\"blank\">Lien</a>"
+          "<a href=\"https://towardsdatascience.com/get-to-know-your-friends-with-natural-language-processing-nlp-38a1f6e56e09\" target=\"blank\">Link</a>"
         ],
         [
           "Predicting flight delays in the U.S.<br/>(2020)",
           "Used SQL functions in Python to merge and manipulate dataframes <br/>Visualized the data using Python Matplolib, Seaborn and Basemap packages",
-          "<a href=\"https://medium.com/analytics-vidhya/will-your-flight-be-late-36818ffe52b3\" target=\"blank\">Lien</a>"
+          "<a href=\"https://medium.com/analytics-vidhya/will-your-flight-be-late-36818ffe52b3\" target=\"blank\">Link</a>"
         ]
       ]
     }

@@ -203,20 +203,20 @@ function handleCustomCommands(command) {
   switch (command) {
     case "pif":
       pif();
-      return "C'est la fête !";
+      return "Its party time";
     case "light":
       if (!document.body.classList.contains("dark-mode"))
-        return "Vous êtes déjà en mode clair";
+        return "You are already in light mode";
       setDarkMode(false);
-      return "Vous êtes maintenant en mode clair.";
+      return "You are now in light mode";
     case "dark":
       if (document.body.classList.contains("dark-mode"))
-        return "Vous êtes déjà en mode sombre";
+        return "You are already in dark mode";
       setDarkMode(true);
-      return "Vous êtes maintenant en mode sombre.";
+      return "You are now in dark mode";
     case "get_cv":
       getCV();
-      return "Le CV va être téléchargé.";
+      return "CV is coming ... wait for it ...";
     case "rm -rf /":
       rmRf();
       return "w4dhIHZhIFDDiVRFUiAh";
