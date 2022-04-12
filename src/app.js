@@ -214,7 +214,7 @@ function handleCustomCommands(command) {
         return "Vous êtes déjà en mode sombre";
       setDarkMode(true);
       return "Vous êtes maintenant en mode sombre.";
-    case "get cv":
+    case "get_cv":
       getCV();
       return "Le CV va être téléchargé.";
     case "rm -rf /":
