@@ -67,7 +67,7 @@ function getDomForCommand(command) {
   if (commandObj === undefined) {
     html = `'${
       command.split(" ")[0]
-    }' n’est pas reconnu en tant que commande interne ou externe, un programme exécutable ou un fichier de commandes. Tapez la commande <code>help</code> pour afficher la liste des commandes disponibles.`;
+    }'is not recognized as an internal or external command, executable program, or batch file. Type <code>help</code> to display the list of internal commands.`;
   } else {
     if (commandObj.responseType === "list" && Array.isArray(commandObj.value)) {
       html = "<ul>";
