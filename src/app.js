@@ -21,7 +21,7 @@ commands.forEach((c) => {
 });
 
 // Commandes qui nécessitent un traitement JS
-const customCommands = ["clear", "dark", "light", "get cv"];
+const customCommands = ["clear", "dark", "light", "get_cv"];
 commandsList = commandsList.concat(customCommands);
 
 // Commandes 'easter eggs' non disponibles à l'autocomplétion
