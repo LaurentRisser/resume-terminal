@@ -77,7 +77,11 @@
       "responseType":"list",
       "value":[
         "Sports: Cycling, Running, Hiking",
-        "Programming: Python",
+        "Music: Jazz, Rock, Blues, Folk, Pop",
+        "Cooking: French, Italian, Spanish, Asian, Indian, Mediterranean",
+        "Reading: Science Fiction, Fantasy",
+        "Travelling: Europe, South America, North America",
+        "Photography: Landscape, Travel",
         "Finance: Investing, Stock Market"
       ]
     },
