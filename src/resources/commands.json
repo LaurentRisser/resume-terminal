@@ -13,7 +13,7 @@
         "<code>contact_me</code> : Display my email address",
         "<code>dark/light</code> : Change the theme",
         "<em>You can use the button TAB to auto complete</em>",
-        "<em>You can retrieve the previous commands by pressing arrow uo</em>"
+        "<em>You can retrieve the previous commands by pressing arrow up</em>"
       ]
     },
     {
@@ -68,7 +68,8 @@
       "command":"contact_me",
       "responseType":"list",
       "value":[
-        "laurentrisser67@gmail.com"
+        "laurentrisser67@gmail.com",
+        "<a href=\"https://www.linkedin.com/in/risserl/\" target=\"blank\">My Linkedin profile</a>"
       ]
     },
     {
@@ -81,7 +82,7 @@
       ]
     },
     {
-      "command":"personal_project",
+      "command":"personal_projects",
       "responseType":"table",
       "headers":[
         "Title",
