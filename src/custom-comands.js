@@ -52,8 +52,8 @@ export function setDarkMode(value) {
 
 export function getCV() {
   const a = document.createElement("a");
-  a.href = "resources/CV - data_engineer_resume_laurent_risser.pdf";
-  a.setAttribute("download", "data_engineer_resume_laurent_risser.pdf");
+  a.href = "resources/resume.pdf";
+  a.setAttribute("download", "resume.pdf");
   a.click();
 }
 
