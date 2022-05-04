@@ -42,7 +42,10 @@
           "02/2021<br/>Today",
           "Data Engineer",
           "Genaiz<br/><em>Montréal, Canada</em>",
-          "Developed a pipeline on GCP to extract, transform and load from various data sources and various data types"
+          "Developed and maintained the production ready data pipeline on Google Cloud Platform (GCP) using an event-driven infrastructure",
+          "Created and deployed containerized (using Docker) rest APIs on Kubernetes for transformation and storage of unstructured data on MongoDB using public and proprietary APIs and SDKs",
+          "Architected on cloud build-based DevOps pipeline for CI-CD.",
+          "Designed, engineered and managed scalable client specific data-pipelines to ensure confidential data security in compliance to the industry standards."
         ],
         [
           "08/2019<br/>01/2021",
