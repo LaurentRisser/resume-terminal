@@ -1,26 +1,13 @@
-# Use the official Node.js image with a specific version (e.g., 16) to have better control over the environment
-FROM node:16
+FROM node
 
-# Set a non-root user for better security
-USER node
+WORKDIR /usr/src/app
 
-# Create and set the working directory owned by the non-root user
-WORKDIR /home/node/app
+ENV PORT 8080
 
-# Expose the default port for the application
-EXPOSE 8080
+COPY package*.json ./
 
-# Copy package.json and package-lock.json using a wildcard, to ensure both are copied if present
-COPY --chown=node:node package*.json ./
+RUN npm install
 
-# Set the ownership of the working directory to the 'node' user
-RUN sudo chown -R node:node /home/node/app
+COPY . ./
 
-# Install the application's dependencies without updating package-lock.json
-RUN npm ci
-
-# Copy the rest of the application's source code and resources with the non-root user's permissions
-COPY --chown=node:node . ./
-
-# Start the application in development mode
 CMD [ "npm", "run", "dev"]
