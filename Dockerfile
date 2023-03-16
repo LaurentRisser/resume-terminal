@@ -13,6 +13,9 @@ EXPOSE 8080
 # Copy package.json and package-lock.json using a wildcard, to ensure both are copied if present
 COPY --chown=node:node package*.json ./
 
+# Set the ownership of the working directory to the 'node' user
+RUN sudo chown -R node:node /home/node/app
+
 # Install the application's dependencies without updating package-lock.json
 RUN npm ci
 
