@@ -1,4 +1,4 @@
-FROM node
+FROM node:14 # or another compatible version
 
 WORKDIR /usr/src/app
 
