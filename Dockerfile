@@ -1,5 +1,7 @@
 FROM debian:bullseye-slim as builder
 WORKDIR /data
+ENV PORT 8080
+
 COPY . .
 RUN apt update && apt install -y npm
 RUN npm install -i package.json \
